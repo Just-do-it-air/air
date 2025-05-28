@@ -166,13 +166,13 @@ main{
 
 .ai-box-kdh{
     width: 100%;
+}
+.ai-box-kdh h4{
+    margin: 100px 20px 20px 76px ;
     justify-content: left;
     font-weight: 500;
     font-size: 30px;
     margin-right: 20px;
-}
-.ai-box-kdh h4{
-    margin: 100px 20px 20px 76px ;
 }
 .ai-img-box-kdh{
     margin: 10px auto 40px;
@@ -182,7 +182,42 @@ main{
 }
 .ai-img-box-kdh img{
     width: 19%;
+
+
 }
+/* 메트콘 style*/
+
+.mecton-img-box-1-kdh img{
+    width: 95%;
+    margin: 100px auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mecton-text{
+    text-align: center;
+}
+.mecton-text p{
+    margin: 40px auto;
+    line-height: 1.4;
+
+}
+.mecton-text h6{
+    font-weight: 800;
+    font-size: 65px;
+    margin: 20px auto 30px;
+}
+.mecton-text a{
+
+    color: #ffffff;
+    background: #000;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
 
 /*페가수스 트레일 5 style*/
 
@@ -217,4 +252,25 @@ main{
     border-radius: 40px;
     cursor: pointer;
 }
+
+/*New & Featured */
+
+
+
+
+
+/* 멤버십 style*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* 하단 메뉴 style */
 
