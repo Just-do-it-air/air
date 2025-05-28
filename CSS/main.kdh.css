@@ -25,15 +25,14 @@ main{
     text-align: center;
 }
 .bk-text-kdh p{
-    margin: 10px auto;
+    margin: 40px auto;
 }
 .bk-text-kdh h1{
     font-weight: 800;
     font-size: 65px;
     margin: 20px auto 30px;
 }
-.bk-text-kdh button{
-    margin: 30px auto 80px;
+.bk-text-kdh a{
     color: #ffffff;
     background: #000;
     font-weight: 700;
@@ -42,15 +41,12 @@ main{
     border-radius: 40px;
     cursor: pointer;
 }
-.bk-text-kdh button a{
-    cursor: pointer;
-}
 
 /*  soccer style */
 
 .sc-img-kdh{
     width: 95%;
-    margin: 0 auto 40px;
+    margin: 100px auto 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,15 +55,17 @@ main{
     text-align: center;
 }
 .sc-text-kdh p{
-    margin: 10px auto;
+    margin: 40px auto;
+    line-height: 1.4;
+
 }
 .sc-text-kdh h2{
     font-weight: 800;
     font-size: 65px;
     margin: 20px auto 30px;
 }
-.sc-text-kdh button{
-    margin: 30px auto 80px;
+.sc-text-kdh a{
+
     color: #ffffff;
     background: #000;
     font-weight: 700;
@@ -76,6 +74,112 @@ main{
     border-radius: 40px;
     cursor: pointer;
 }
-.sc-text-kdh button a{
+
+/*trending now style */
+.tn-box-kdh{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.tn-top-box-kdh{
+    width: 95%;
+    margin: 100px auto 20px;
+    display: flex;
+    justify-content: left;
+    font-weight: 500;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.tn-img-kdh{
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content:;
+    align-items: center;
+}
+
+.tn-img-box-1-kdh{
+    position: relative;
+    width: 30%;
+    margin: 0 50px;
+}
+
+.tn-overlay-1{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.tn-img-box-2-kdh{
+    position: relative;
+    width: 30%;
+    margin: 0 50px;
+}
+
+.tn-overlay-2{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.tn-img-box-3-kdh{
+    position: relative;
+    width: 30%;
+    margin: 0 50px;
+}
+
+.tn-overlay-3{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.tn-img-kdh p{
+    margin-bottom: 20px;
+}
+
+.tn-img-kdh a{
+    color: #000000;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 40px;
     cursor: pointer;
+}
+
+
+/* Always iconic */
+
+.ai-box-kdh{
+    width: 100%;
+    justify-content: left;
+    font-weight: 500;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.ai-box-kdh h4{
+    margin: 100px 20px 20px 76px ;
+}
+.ai-img-box-kdh{
+    margin: 10px auto 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ai-img-box-kdh img{
+    width: 19%;
 }
