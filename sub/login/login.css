@@ -1,7 +1,11 @@
 @import url(../../CSS/reset.css);
 @import url(../../CSS/common.css);
 
-.container {
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
