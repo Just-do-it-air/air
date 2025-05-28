@@ -1,3 +1,4 @@
+/* ==== header ==== */
 .header{
     width: 100%;
 }
@@ -132,4 +133,30 @@
 }
 .header .bottom .search-area .link-area .link-cart{
     background-image: url("../img/common/ico-cart.svg");
+}
+.header .banner{
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    height: 60px;
+    font-weight: 500;
+}
+.header .banner p{
+    line-height: 1.8;
+}
+.header .banner a{
+    font-size: 12px;
+    text-decoration: underline;
+}
+#main .header .banner p{
+    padding-top: 4px;
+}
+#sub .header .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#sub .header .banner a{
+    padding-top: 2px;
 }
