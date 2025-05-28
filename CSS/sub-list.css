@@ -1,0 +1,69 @@
+.sub-container{
+    padding: 0 48px;
+}
+.list-top{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.list-top .title-area .path{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.list-top .title-area .path li{
+    position: relative;
+    padding-right: 8px;
+}
+.list-top .title-area .path li::after{
+    content: '/';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.list-top .title-area .path li:last-child::after{
+    display: none;
+}
+.list-top .title-area .path li a:hover{
+    color: #999;
+}
+.list-top .title-area .sub-title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.list-top .title-area .sub-title i{
+    padding-left: 5px;
+}
+.list-top .btn-area .btn{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+}
+.list-top .btn-area{
+    display: flex;
+    gap: 20px;
+}
+.list-top .btn-area .btn::after{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.list-top .btn-area .btn.btn-filter::after{
+    background-image: url('../img/common/ico-filter.svg');
+}
+.list-top .btn-area .btn.btn-sorting::after{
+    background-image: url('../img/common/ico-arrow.svg');
+}
