@@ -1,2 +1,50 @@
 @import "reset.css";
 @import "common.css";
+
+
+body{
+
+}
+
+main{
+    background: #ffffff;
+
+
+}
+
+/*  basketball style */
+
+.bk-img-kdh{
+    width: 95%;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bk-text-kdh{
+    text-align: center;
+}
+.bk-text-kdh p{
+    margin: 10px auto;
+}
+.bk-text-kdh h1{
+    font-weight: 800;
+    font-size: 65px;
+    margin: 20px auto 30px;
+}
+.bk-text-kdh button{
+    margin: 30px auto 80px;
+    color: #ffffff;
+    background: #000;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.bk-text-kdh button a{
+    cursor: pointer;
+}
+
+
+
