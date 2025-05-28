@@ -183,3 +183,38 @@ main{
 .ai-img-box-kdh img{
     width: 19%;
 }
+
+/*페가수스 트레일 5 style*/
+
+
+.tr-img-kdh{
+    width: 95%;
+    margin: 100px auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tr-text-kdh{
+    text-align: center;
+}
+.tr-text-kdh p{
+    margin: 40px auto;
+    line-height: 1.4;
+
+}
+.tr-text-kdh h5{
+    font-weight: 800;
+    font-size: 65px;
+    margin: 20px auto 30px;
+}
+.tr-text-kdh a{
+
+    color: #ffffff;
+    background: #000;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
