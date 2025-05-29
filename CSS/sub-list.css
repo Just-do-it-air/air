@@ -1,0 +1,289 @@
+.sub-container{
+    padding: 0 48px;
+}
+.list-top{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.list-top .title-area .path{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.list-top .title-area .path li{
+    position: relative;
+    padding-right: 12px;
+}
+.list-top .title-area .path li::after{
+    content: '/';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.list-top .title-area .path li:last-child::after{
+    display: none;
+}
+.list-top .title-area .path li a:hover{
+    color: #999;
+}
+.list-top .title-area .sub-title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.list-top .title-area .sub-title i{
+    padding-left: 5px;
+}
+.list-top .btn-area .btn{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+}
+.list-top .btn-area{
+    display: flex;
+    gap: 20px;
+}
+.list-top .btn-area .btn::after{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.list-top .btn-area .btn.btn-filter::after{
+    background-image: url('../img/common/ico-filter.svg');
+}
+.list-top .btn-area .btn.btn-sorting::after{
+    background-image: url('../img/common/ico-arrow.svg');
+}
+
+/* ==== product list ==== */
+.list-wrap{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 1%;
+    padding-left: 40px;
+}
+.list .list-item{
+    width: 32%;
+}
+.list .list-item .img-box img{
+    width: 100%;
+}
+.list .list-item .txt-box{
+    padding-top: 12px;
+}
+.list .list-item .txt-box > *{
+    margin-bottom: 10px;
+}
+.list .list-item .txt-box > *:last-child{
+    margin-bottom: 0;
+}
+.list .list-item .txt-box .item-title{
+    font-weight: 500;
+}
+.list .list-item .txt-box p{
+    color: #707072;
+}
+.list .list-item .txt-box .price{
+    color: #000;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.filter{
+    flex-shrink: 0;
+    width: 220px;
+    overflow-y: auto;
+    height: 100vh;
+    position: sticky;
+    padding: 8px 10px 0 5px;
+
+}
+.filter .option{
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #e5e5e5;
+}
+.filter .option .label{
+    font-weight: 500;
+    padding-bottom: 20px;
+    position: relative;
+    line-height: 1.5;
+}
+.filter .option .label::after{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/common/ico-arrow.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-180deg);
+    cursor: pointer;
+}
+.filter .categories{
+    padding-top: 0;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+.filter .categories .checked{
+    text-decoration: underline;
+}
+.filter .option .chk-area{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+.filter .option .chk-area:hover{
+    color: #666;
+}
+.filter .option .chk-area input[type="checkbox"]{
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -111;
+}
+.filter .option .chk-area .chk{
+    position: relative;
+    padding: 4px 0 4px 30px;
+    cursor: pointer;
+}
+.filter .option .chk-area .chk:hover{
+    color: #707072;
+}
+.filter .option .chk-area .chk:after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #707072;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.filter .option .chk-area input[type="checkbox"]:checked + .chk:after{
+    content: '';
+    background-color: #000;
+    border-color: #000;
+    background-image: url('../img/common/ico-check.svg');
+    background-position: center;
+    background-size: 20px;
+}
+.filter .option .size-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.filter .option .size-wrap .chk-area{
+    width: 33.3%;
+}
+.filter .option .size-wrap .type-02{
+    width: 50%;
+}
+.filter .option .size-wrap .chk-area .chk.chk-btn{
+    width: 100%;
+    padding: 10px 12px;
+    height: 36px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+.filter .option .size-wrap .chk-area .chk.chk-btn:hover{
+    border: 1px solid #000;
+    color: #000;
+}
+.filter .option .size-wrap .chk-area input[type="checkbox"]:checked + .chk.chk-btn{
+    border: 1px solid #000;
+}
+.filter .option .chk-area .chk.chk-btn:after{
+    display: none;
+}
+.filter .option .btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.filter .option .btn-more{
+    font-size: 16px;
+    padding: 10px 0 0 0;
+}
+.filter .option .btn-area.color{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px 0;
+}
+.filter .option .btn-area.color .btn-color{
+    width: 33.3%;
+    position: relative;
+    font-size: 12px;
+}
+.filter .option .btn-area.color .btn-color::before{
+    content: '';
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background-color: #000;
+    margin: 0 auto 4px;
+}
+.filter .option .btn-area.color .btn-color.blue::before{
+    background-color: #1790C8;
+}
+.filter .option .btn-area.color .btn-color.brown::before{
+    background-color: #825D41;
+}
+.filter .option .btn-area.color .btn-color.green::before{
+    background-color: #7BBA3C;
+}
+.filter .option .btn-area.color .btn-color.gray::before{
+    background-color: #808080;
+}
+.filter .option .btn-area.color .btn-color.pink::before{
+    background-color: #F0728F;
+}
+.filter .option .btn-area.color .btn-color.purple::before{
+    background-color: #8D429F;
+}
+.filter .option .btn-area.color .btn-color.red::before{
+    background-color: #E7352B;
+}
+.filter .option .btn-area.color .btn-color.white::before{
+    background-color: #ffffff;
+}
+.filter .option .btn-area.color .btn-color.yellow::before{
+    background-color: #FED533;
+}
