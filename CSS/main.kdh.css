@@ -41,7 +41,10 @@ main{
     border-radius: 40px;
     cursor: pointer;
 }
-
+.bk-text-kdh a:hover {
+    background: #000000;
+    opacity: 0.5;
+}
 /*  soccer style */
 
 .sc-img-kdh{
@@ -74,6 +77,11 @@ main{
     border-radius: 40px;
     cursor: pointer;
 }
+.sc-text-kdh a:hover {
+    background: #000000;
+    opacity: 0.5;
+}
+
 
 /*trending now style */
 
@@ -147,7 +155,10 @@ main{
     border-radius: 40px;
     cursor: pointer;
 }
-
+.tn-img-kdh a:hover{
+    background: #ffffff;
+    opacity: 0.5;
+}
 
 /* Always iconic */
 
@@ -208,7 +219,10 @@ main{
     border-radius: 40px;
     cursor: pointer;
 }
-
+.mecton-text a:hover {
+    background: #000000;
+    opacity: 0.5;
+}
 
 /*페가수스 트레일 5 style*/
 
@@ -242,6 +256,10 @@ main{
     padding: 8px 15px;
     border-radius: 40px;
     cursor: pointer;
+}
+.tr-text-kdh a:hover {
+    background: #000000;
+    opacity: 0.5;
 }
 
 /*New & Featured */
@@ -301,6 +319,12 @@ main{
     border-radius: 40px;
     cursor: pointer;
 }
+.nf-img-box-kdh a:hover{
+    background: #ffffff;
+    opacity: 0.5;
+}
+
+
 .nf-img-box-4-kdh a{
     color: #ffffff;
     background: #000000;
@@ -310,6 +334,10 @@ main{
     border-radius: 40px;
     cursor: pointer;
 }
+.nf-img-box-4-kdh a:hover {
+    background: #000000;
+    opacity: 0.5;
+}
 .nf-img-box-4-kdh p{
     color: #000;
 }
@@ -318,46 +346,96 @@ main{
 
 
 
-
-
-
-
-
-
-
-
-
-/* 하단 메뉴 style */
-
-.bottom-menu{
-
+.ms-top-box-kdh{
     width: 95%;
-    margin: 100px auto 70px;
+    margin: 100px auto 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-.bottom-menu ul{
-    font-size: 25px;
+    justify-content: left;
     font-weight: 500;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.ms-box-kdh {
+    width: 95%;
+    margin: 40px auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    margin: 50px 70px;
-
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.bottom-menu a{
+.ms-img-box-kdh {
+    position: relative;
+}
+
+.ms-box-kdh img {
+    width: 100%;
+}
+
+.ms-text-kdh{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+}
+
+.ms-text-kdh p:first-child{
+    font-weight: 700;
     font-size: 15px;
-    flex-direction: column;
-    margin: 13px 0;
-    color: #707072;
+    margin: 0;
+}
+.ms-text-kdh p{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.ms-text-kdh a{
+    color: #ffffff;
+    background: #000000;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 15px;
+    border-radius: 40px;
     cursor: pointer;
 }
-.bottom-menu a:first-child{
-    margin-top: 50px;
+.ms-text-kdh a:hover {
+    background: #000000;
+    opacity: 0.5;
 }
+
+    /* 하단 메뉴 style */
+
+    .bottom-menu {
+
+        width: 95%;
+        margin: 100px auto 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .bottom-menu ul {
+        font-size: 25px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin: 50px 70px;
+
+    }
+
+    .bottom-menu a {
+        font-size: 15px;
+        flex-direction: column;
+        margin: 13px 0;
+        color: #707072;
+        cursor: pointer;
+    }
+
+    .bottom-menu a:first-child {
+        margin-top: 50px;
+    }
+
