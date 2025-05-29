@@ -1,10 +1,12 @@
 @import url(../../CSS/reset.css);
 @import url(../../CSS/common.css);
 
+/* 기본 글꼴 설정 */
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* 로그인 컨테이너 전체 레이아웃 */
 .container-login {
     display: flex;
     flex-direction: column;
@@ -14,50 +16,60 @@ body {
     margin: 0 auto;
 }
 
+/* 헤더 영역 */
 header {
     width: 100%;
 }
+
+/* 로고 박스: 나이키, 조던 로고 수평 정렬 */
 header .logo-box-login {
     display: flex;
     justify-content: flex-start;
     margin: 20px auto 10px;
 }
-header .nike-logo-login {
-    width: 48px;
-    height: 48px;
-}
+
+/* 로고 이미지 크기 고정 */
+header .nike-logo-login,
 header .jordan-logo-login {
     width: 48px;
     height: 48px;
 }
-header .nike-logo-login .nike-logo-icon-login {
-    width: 48px;
-    height: 48px;
-}
+
+header .nike-logo-login .nike-logo-icon-login,
 header .jordan-logo-login .jordan-logo-icon-login {
     width: 48px;
     height: 48px;
 }
 
+/* 본문 메인 안내 텍스트 */
 main .information-login {
     font-size: 27px;
     line-height: 35px;
     margin: 20px auto 20px;
 }
+
+/* 국가 및 변경 링크 정렬 */
 main .country-container-login {
     display: flex;
     font-size: 16px;
 }
+
+/* 국가 정보 */
 main .country-container-login .country-login {
     margin-right: 10px;
 }
+
+/* '변경' 링크 스타일 */
 main .country-container-login .change-login {
     color: #757575;
     text-decoration: underline;
 }
+
+/* 로그인 이메일 입력 폼 */
 main .login-login {
     margin: 50px auto 50px;
 }
+
 main .login-login .email-login {
     border: 1px solid #707073;
     border-radius: 10px;
@@ -67,27 +79,33 @@ main .login-login .email-login {
     color: #707073;
     padding: 7px;
 }
+
+/* 약관 안내 문구 */
 main .agree-login {
     font-size: 16px;
     color: #757575;
     line-height: 25px;
 }
-main .agree-login .personal-information-login {
-    font-weight: 550;
-    text-decoration: underline;
-}
+
+/* 개인정보 처리방침 및 이용약관 강조 */
+main .agree-login .personal-information-login,
 main .agree-login .terms-of-use-login {
     font-weight: 550;
     text-decoration: underline;
 }
 
+/* 푸터 영역 */
 footer {
     width: 100%;
 }
+
+/* 버튼 박스 우측 정렬 */
 footer .continue-box-login {
     display: flex;
     justify-content: flex-end;
 }
+
+/* '계속' 버튼 스타일 */
 footer .continue-box-login .continue-login {
     width: 75px;
     height: 45px;
@@ -96,4 +114,8 @@ footer .continue-box-login .continue-login {
     background: #121212;
     font-size: 16px;
     margin-top: 50px;
+}
+
+footer .continue-box-login .continue-login .continue-button-login {
+    cursor: pointer;
 }
