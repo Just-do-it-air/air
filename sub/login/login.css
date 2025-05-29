@@ -1,0 +1,95 @@
+@import url(../../CSS/reset.css);
+@import url(../../CSS/common.css);
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+}
+header .logo-box-login {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px auto 20px;
+}
+header .nike-logo-login {
+    width: 48px;
+    height: 48px;
+}
+header .jordan-logo-login {
+    width: 48px;
+    height: 48px;
+}
+header .nike-logo-login .nike-logo-icon-login {
+    width: 48px;
+    height: 48px;
+}
+header .jordan-logo-login .jordan-logo-icon-login {
+    width: 48px;
+    height: 48px;
+}
+
+main .information-login {
+    font-size: 29px;
+    line-height: 35px;
+    margin: 20px auto 20px;
+}
+main .country-container-login {
+    display: flex;
+    font-size: 16px;
+}
+main .country-container-login .country-login {
+    margin-right: 10px;
+}
+main .country-container-login .change-login {
+    color: #757575;
+    text-decoration: underline;
+}
+main .login-login {
+    margin: 50px auto 50px;
+}
+main .login-login .email-login {
+    border: 1px solid #707073;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    color: #707073;
+    padding: 10px;
+}
+main .agree-login {
+    font-size: 16px;
+    color: #757575;
+    line-height: 25px;
+}
+main .agree-login .personal-information-login {
+    font-weight: 550;
+    text-decoration: underline;
+}
+main .agree-login .terms-of-use-login {
+    font-weight: 550;
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+}
+footer .continue-box-login {
+    display: flex;
+    justify-content: flex-end;
+}
+footer .continue-box-login .continue-login {
+    width: 75px;
+    height: 45px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #121212;
+    font-size: 16px;
+    margin-top: 50px;
+}

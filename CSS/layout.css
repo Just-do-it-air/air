@@ -1,3 +1,4 @@
+/* ==== header ==== */
 .header{
     width: 100%;
 }
@@ -132,4 +133,118 @@
 }
 .header .bottom .search-area .link-area .link-cart{
     background-image: url("../img/common/ico-cart.svg");
+}
+.header .banner{
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    height: 60px;
+    font-weight: 500;
+}
+.header .banner p{
+    line-height: 1.8;
+}
+.header .banner a{
+    font-size: 12px;
+    text-decoration: underline;
+}
+#main .header .banner p{
+    padding-top: 4px;
+}
+#sub .header .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#sub .header .banner a{
+    padding-top: 2px;
+}
+
+/* ==== footer ==== */
+.footer{
+    padding: 48px;
+    font-size: 14px;
+    color: #707072;
+}
+.footer .nav{
+    padding: 60px 0 80px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.footer .nav ul{
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer .nav ul li.title{
+    color: #000;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.footer .nav ul li a:hover{
+    color: #666;
+}
+.footer .nav .link-global{
+    position: relative;
+    padding-left: 20px;
+    margin-left: auto;
+    font-weight: 500;
+}
+.footer .nav .link-global:before{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    mask-image: url('../img/common/ico-global.svg');
+    -webkit-mask-image: url('../img/common/ico-global.svg');
+    background-color: #707072;
+    mask-size: contain;
+    position: absolute;
+    left: 0;
+}
+.footer .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 24px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.footer .menu li strong{
+    font-weight: 600;
+}
+.footer .menu li a:hover{
+    color: #000;
+}
+.footer .txt{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    line-height: 1.8;
+}
+.footer .txt span{
+    padding-right: 5px;
+    position: relative;
+}
+.footer .txt span::after{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background-color: #707072;
+    margin-top: -2px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.footer .txt span:last-child::after{
+    display: none;
+}
+.footer .txt a{
+    text-decoration: underline;
 }
