@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../../img/sub/nike-logo-icon-2.png" type="image/png">
     <link rel="stylesheet" href="../../CSS/common.css">
     <link rel="stylesheet" href="../../CSS/sub-list.css">
     <title>상품 리스트</title>
@@ -59,26 +60,446 @@
     <!-- //header -->
 
     <!-- subpage -->
-    <main class="sub-container list">
+    <main class="sub-container">
         <section class="list-top">
             <div class="title-area">
                 <ul class="path">
                     <li class="1depth"><a href="#">농구</a></li>
                     <li class="2depth"><a href="#">신발</a></li>
-<!--                    <li class="3depth"><a href="#"></a></li>-->
+                    <li class="3depth"><a href="#">의류</a></li>
                 </ul>
-                <h2 class="sub-title">
-                    르브론 제임스 농구 신발
-                    <i class="count">(25)</i>
-                </h2>
+                <h2 class="sub-title">르브론 제임스 농구<i class="count">(25)</i></h2>
             </div>
             <div class="btn-area">
                 <button type="button" class="btn btn-filter">필터 숨기기</button>
                 <button type="button" class="btn btn-sorting">정렬 기준: </button>
             </div>
         </section>
-        <aside class="filter"></aside>
-        <section class="product-list"></section>
+        <section class="list-wrap">
+            <aside class="filter">
+                <ul class="option categories">
+                    <li class="checked"><a href="#">르브론 제임스</a></li>
+                    <li><a href="#">코비 브라이언트</a></li>
+                    <li><a href="#">자 모란트</a></li>
+                    <li><a href="#">에이자 윌슨</a></li>
+                    <li><a href="#">사브리나 이오네스쿠</a></li>
+                    <li><a href="#">케빈 듀란트</a></li>
+                    <li><a href="#">안데토쿤보</a></li>
+                    <li><a href="#">데빈 부커</a></li>
+                    <li><a href="#">제이슨 테이텀</a></li>
+                    <li><a href="#">루카 돈치치</a></li>
+                    <li><a href="#">자이언 윌리엄슨</a></li>
+                    <li><a href="#">러셀 웨스트브룩</a></li>
+                    <li><a href="#">조던</a></li>
+                </ul>
+                <div class="option">
+                    <p class="label">성별<i class="count"></i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-sex-01" name="chk-sex" />
+                        <label for="chk-sex-01" class="chk">남성</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-sex-02" name="chk-sex" />
+                        <label for="chk-sex-02"  class="chk" >여성</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-sex-03" name="chk-sex" />
+                        <label for="chk-sex-03"  class="chk" >성인 공용</label>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">키즈<i class="count"></i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-kids-01" name="chk-kids" />
+                        <label for="chk-kids-01" class="chk">남아</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-kids-02" name="chk-kids" />
+                        <label for="chk-kids-02" class="chk">여아</label>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">할인율<i class="count"></i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-sale-01" name="chk-sale" />
+                        <label for="chk-sale-01" class="chk">30% 이상</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-sale-02" name="chk-sale" />
+                        <label for="chk-sale-02" class="chk">20% 이상</label>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">스포츠<i class="count">(1)</i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-sport-01" name="chk-sport" />
+                        <label for="chk-sport-01" class="chk">트레이닝 및 짐</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-sport-02" name="chk-sport" checked/>
+                        <label for="chk-sport-02" class="chk">농구</label>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">키즈 연령<i class="count"></i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-kids-age" name="chk-kids-age" />
+                        <label for="chk-kids-age" class="chk">주니어(7-15세)</label>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">가격대<i class="count"></i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-price-01" name="chk-price" />
+                        <label for="chk-price-01" class="chk"><span>0 - 50,000</span> 원</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-price-02" name="chk-price" />
+                        <label for="chk-price-02" class="chk"><span>50,000 - 100,000</span> 원</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-price-03" name="chk-price" />
+                        <label for="chk-price-03" class="chk"><span>100,000 - 150,000</span> 원</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-price-04" name="chk-price" />
+                        <label for="chk-price-04" class="chk"><span>150,000 - 200,000</span> 원</label>
+                    </div>
+                    <button type="button" class="btn btn-more">+ 더 보기</button>
+                </div>
+                <div class="option">
+                    <p class="label">운동선수<i class="count">(1)</i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-athlete-01" name="chk-athlete" />
+                        <label for="chk-athlete-01" class="chk">코비 브라이언트</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-athlete-02" name="chk-athlete" />
+                        <label for="chk-athlete-02" class="chk">르브론 제임스</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-athlete-03" name="chk-athlete" />
+                        <label for="chk-athlete-03" class="chk">케빈 듀란트</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-athlete-04" name="chk-athlete" />
+                        <label for="chk-athlete-04" class="chk">안데코툰부</label>
+                    </div>
+                    <button type="button" class="btn btn-more">+ 더 보기</button>
+                </div>
+                <div class="option">
+                    <p class="label">신발 높이<i class="count"></i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-shoe-size-01" name="chk-shoe-size" />
+                        <label for="chk-shoe-size-01" class="chk">로우 탑</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-shoe-size-02" name="chk-shoe-size" />
+                        <label for="chk-shoe-size-02" class="chk">미드 탑</label>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">브랜드<i class="count"></i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-brand" name="chk-brand" />
+                        <label for="chk-brand" class="chk">조던</label>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">색상<i class="count"></i></p>
+                    <div class="btn-area color">
+                        <button type="button" class="btn btn-color">블랙</button>
+                        <button type="button" class="btn btn-color blue">블루</button>
+                        <button type="button" class="btn btn-color brown">브라운</button>
+                        <button type="button" class="btn btn-color green">그린</button>
+                        <button type="button" class="btn btn-color gray">그레이</button>
+                        <button type="button" class="btn btn-color pink">핑크</button>
+                        <button type="button" class="btn btn-color purple">퍼플</button>
+                        <button type="button" class="btn btn-color red">레드</button>
+                        <button type="button" class="btn btn-color white">화이트</button>
+                        <button type="button" class="btn btn-color yellow">옐로우</button>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">기술<i class="count"></i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-tech-01" name="chk-tech" />
+                        <label for="chk-tech-01" class="chk">드라이-핏</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-tech-02" name="chk-tech" />
+                        <label for="chk-tech-02" class="chk">나이키 맥스 에어</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-tech-03" name="chk-tech" />
+                        <label for="chk-tech-03" class="chk">써마 핏</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-tech-04" name="chk-tech" />
+                        <label for="chk-tech-04" class="chk">나이키 줌 에어</label>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">사이즈<i class="count"></i></p>
+                    <div class="size-wrap">
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-01" name="chk-size" />
+                            <label for="chk-size-01" class="chk chk-btn">225</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-02" name="chk-size" />
+                            <label for="chk-size-02" class="chk chk-btn">230</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-03" name="chk-size" />
+                            <label for="chk-size-03" class="chk chk-btn">235</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-04" name="chk-size" />
+                            <label for="chk-size-04" class="chk chk-btn">240</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-05" name="chk-size" />
+                            <label for="chk-size-05" class="chk chk-btn">245</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-06" name="chk-size" />
+                            <label for="chk-size-06" class="chk chk-btn">250</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-07" name="chk-size" />
+                            <label for="chk-size-07" class="chk chk-btn">255</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-08" name="chk-size" />
+                            <label for="chk-size-08" class="chk chk-btn">260</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-09" name="chk-size" />
+                            <label for="chk-size-09" class="chk chk-btn">265</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-10" name="chk-size" />
+                            <label for="chk-size-10" class="chk chk-btn">270</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-11" name="chk-size" />
+                            <label for="chk-size-11" class="chk chk-btn">275</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-12" name="chk-size" />
+                            <label for="chk-size-12" class="chk chk-btn">280</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-13" name="chk-size" />
+                            <label for="chk-size-13" class="chk chk-btn">285</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-14" name="chk-size" />
+                            <label for="chk-size-14" class="chk chk-btn">290</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-15" name="chk-size" />
+                            <label for="chk-size-15" class="chk chk-btn">300</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-16" name="chk-size" />
+                            <label for="chk-size-16" class="chk chk-btn">310</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-17" name="chk-size" />
+                            <label for="chk-size-17" class="chk chk-btn">255</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-18" name="chk-size" />
+                            <label for="chk-size-18" class="chk chk-btn">260</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-19" name="chk-size" />
+                            <label for="chk-size-19" class="chk chk-btn">265</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-20" name="chk-size" />
+                            <label for="chk-size-20" class="chk chk-btn">270</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-21" name="chk-size" />
+                            <label for="chk-size-21" class="chk chk-btn">275</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-22" name="chk-size" />
+                            <label for="chk-size-22" class="chk chk-btn">280</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-23" name="chk-size" />
+                            <label for="chk-size-23" class="chk chk-btn">285</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-24" name="chk-size" />
+                            <label for="chk-size-24" class="chk chk-btn type-02">290</label>
+                        </div>
+                        <div class="chk-area type-02">
+                            <input type="checkbox" id="chk-size-25" name="chk-size" />
+                            <label for="chk-size-25" class="chk chk-btn">300</label>
+                        </div>
+                        <div class="chk-area type-02">
+                            <input type="checkbox" id="chk-size-27" name="chk-size" />
+                            <label for="chk-size-27" class="chk chk-btn">310</label>
+                        </div>
+                        <div class="chk-area type-02">
+                            <input type="checkbox" id="chk-size-28" name="chk-size" />
+                            <label for="chk-size-28" class="chk chk-btn">M(US44)</label>
+                        </div>
+                        <div class="chk-area type-02">
+                            <input type="checkbox" id="chk-size-30" name="chk-size" />
+                            <label for="chk-size-30" class="chk chk-btn">S</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-31" name="chk-size" />
+                            <label for="chk-size-31" class="chk chk-btn">M</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-32" name="chk-size" />
+                            <label for="chk-size-32" class="chk chk-btn">L</label>
+                        </div>
+                        <div class="chk-area">
+                            <input type="checkbox" id="chk-size-33" name="chk-size" />
+                            <label for="chk-size-33" class="chk chk-btn type-02">XL</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="option">
+                    <p class="label">추가 사이즈<i class="count"></i></p>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-add-size-01" name="chk-add-size" />
+                        <label for="chk-add-size-01" class="chk">아시아 사이즈</label>
+                    </div>
+                    <div class="chk-area">
+                        <input type="checkbox" id="chk-add-size-02" name="chk-add-size" />
+                        <label for="chk-add-size-02" class="chk">US 사이</label>
+                    </div>
+                </div>
+            </aside>
+            <ul class="list">
+                <li class="list-item">
+                    <a href="#" target="_self">
+                        <div class="img-box">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1c39aad7-f503-4622-a558-9f22f198b478/LEBRON+WITNESS+VIII+EP.png" alt ="르브론 위트니스 VIII EP 농구화"/>
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="item-title">타이틀</h3>
+                            <p class="item-tag">농구화</p>
+                            <p class="color">1개 색상</p>
+                            <p class="price"><strong>129,000</strong> 원</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_self">
+                        <div class="img-box">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/77bd6ffd-7ca8-49da-ae55-585411b0dcce/LEBRON+WITNESS+VIII+EP.png" alt ="르브론 위트니스 VIII EP 농구화"/>
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="item-title">타이틀</h3>
+                            <p class="item-tag">농구화</p>
+                            <p class="color">1개 색상</p>
+                            <p class="price"><strong>129,000</strong> 원</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_self">
+                        <div class="img-box">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/57871c9e-9fdc-4cc1-a074-7183c639fbc8/LBJ+NXXT+GENISUS+EP.png" alt ="르브론 위트니스 VIII EP 농구화"/>
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="item-title">타이틀</h3>
+                            <p class="item-tag">농구화</p>
+                            <p class="color">1개 색상</p>
+                            <p class="price"><strong>129,000</strong> 원</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_self">
+                        <div class="img-box">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f68ec5fc-9d84-4ef8-8559-b3001d2f4045/LEBRON+XXII+BW+EP.png" alt ="르브론 위트니스 VIII EP 농구화"/>
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="item-title">타이틀</h3>
+                            <p class="item-tag">농구화</p>
+                            <p class="color">1개 색상</p>
+                            <p class="price"><strong>129,000</strong> 원</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_self">
+                        <div class="img-box">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/01fedaaf-31b8-4880-b972-7fc85c5a80f2/LEBRON+XXII+EP.png" alt ="르브론 위트니스 VIII EP 농구화"/>
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="item-title">타이틀</h3>
+                            <p class="item-tag">농구화</p>
+                            <p class="color">1개 색상</p>
+                            <p class="price"><strong>129,000</strong> 원</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_self">
+                        <div class="img-box">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4499bdb4-cfc6-49f0-afef-9083a7604919/LEBRON+XXII+EP.png" alt ="르브론 위트니스 VIII EP 농구화"/>
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="item-title">타이틀</h3>
+                            <p class="item-tag">농구화</p>
+                            <p class="color">1개 색상</p>
+                            <p class="price"><strong>129,000</strong> 원</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_self">
+                        <div class="img-box">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/52e22273-62b9-47cd-a54a-cebd81084bd5/LBJ+NXXT+GENISUS+EP.png" alt ="르브론 위트니스 VIII EP 농구화"/>
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="item-title">타이틀</h3>
+                            <p class="item-tag">농구화</p>
+                            <p class="color">1개 색상</p>
+                            <p class="price"><strong>129,000</strong> 원</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_self">
+                        <div class="img-box">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8b46b3ed-96c1-4193-beee-ef8f33c0efcd/LBJ+NXXT+GENISUS+EP.png" alt ="르브론 위트니스 VIII EP 농구화"/>
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="item-title">타이틀</h3>
+                            <p class="item-tag">농구화</p>
+                            <p class="color">1개 색상</p>
+                            <p class="price"><strong>129,000</strong> 원</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#" target="_self">
+                        <div class="img-box">
+                            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2b7e8f71-4ad5-4954-9f59-bec4e2c7ff65/LBJ+NXXT+GENISUS+QS+EP.png" alt ="르브론 위트니스 VIII EP 농구화"/>
+                        </div>
+                        <div class="txt-box">
+                            <h3 class="item-title">타이틀</h3>
+                            <p class="item-tag">농구화</p>
+                            <p class="color">1개 색상</p>
+                            <p class="price"><strong>129,000</strong> 원</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
     </main>
     <!-- //subpage -->
     
