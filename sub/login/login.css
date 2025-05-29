@@ -1,12 +1,16 @@
 @import url(../../CSS/reset.css);
 @import url(../../CSS/common.css);
 
-.container {
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 23%;
     margin: 0 auto;
 }
 
@@ -16,7 +20,7 @@ header {
 header .logo-box-login {
     display: flex;
     justify-content: flex-start;
-    margin: 20px auto 20px;
+    margin: 20px auto 10px;
 }
 header .nike-logo-login {
     width: 48px;
@@ -36,7 +40,7 @@ header .jordan-logo-login .jordan-logo-icon-login {
 }
 
 main .information-login {
-    font-size: 29px;
+    font-size: 27px;
     line-height: 35px;
     margin: 20px auto 20px;
 }
@@ -61,7 +65,7 @@ main .login-login .email-login {
     height: 60px;
     font-size: 16px;
     color: #707073;
-    padding: 10px;
+    padding: 7px;
 }
 main .agree-login {
     font-size: 16px;
