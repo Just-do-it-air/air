@@ -68,6 +68,22 @@
     background-image: url('../img/common/ico-arrow.svg');
 }
 
+.list-top.scrolled{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 13px 0;
+    background-color: #fff;
+    z-index: 1;
+}
+.list-top.scrolled .title-area .path{
+    display: none;
+}
+.list-top.scrolled .title-area .sub-title{
+    font-size: 20px;
+}
+
 /* ==== product list ==== */
 .list-wrap{
     padding-top: 30px;
