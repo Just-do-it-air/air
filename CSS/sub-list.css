@@ -115,8 +115,8 @@
     overflow-y: auto;
     height: 100vh;
     position: sticky;
+    top: 0;
     padding: 8px 10px 0 5px;
-
 }
 .filter .option{
     width: 100%;
@@ -250,6 +250,9 @@
     position: relative;
     font-size: 12px;
 }
+.filter .option .btn-area.color .btn-color:hover{
+    color: #666;
+}
 .filter .option .btn-area.color .btn-color::before{
     content: '';
     display: block;
@@ -283,6 +286,7 @@
 }
 .filter .option .btn-area.color .btn-color.white::before{
     background-color: #ffffff;
+    border: 1px solid #e5e5e5;
 }
 .filter .option .btn-area.color .btn-color.yellow::before{
     background-color: #FED533;
