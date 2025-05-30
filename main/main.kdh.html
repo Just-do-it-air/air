@@ -5,10 +5,59 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Nike. Just Do It. 나이키 코리아</title>
     <link rel="stylesheet" href="../CSS/main.kdh.css">
+    <link rel="icon" href="../../img/sub/nike-logo-icon-2.png" type="image/png">
 </head>
-<body>
+<body id="main">
+
+    <!-- header -->
+    <header class="header">
+        <div class="top">
+            <ul class="left">
+                <li><a href="#" class="jordan">조던</a></li>
+                <li><a href="#" class="canvas">캔버스</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#">매장 찾기</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">가입하기</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="../img/common/nike-logo.svg" alt="나이키"/>
+                </a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="search-area">
+                <div class="search">
+                    <button type="button" class="btn btn-search">검색</button>
+                    <input type="text" placeholder="검색" id="input-txt">
+                    <label for="input-txt"></label>
+                </div>
+                <div class="link-area">
+                    <a href="#" class="link-favorite">즐겨찾기</a>
+                    <a href="#" class="link-cart">장바구니</a>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <p>대학생 할인 프로그램 안내</p>
+            <a href="#">자세히 보기</a>
+        </div>
+    </header>
+    <!-- //header -->
 
     <main>
 
@@ -16,58 +65,70 @@
         <div class="bk-box-kdh">
 
             <div class="bk-img-box-kdh">
-                <img class="bk-img-kdh"  src="../img/main/basketball-img.avif" alt="농구">
+                <img class="bk-img-kdh" src="../img/main/basketball-img.avif" alt="농구">
             </div>
 
-            <p>나이키 농구</p>
-            <h1>힘과 지혜를 담은 진주</h1>
-            <p>에이원 'OG 펄'. 에이자의 할머니가 손녀에게 강인함을 상징하는 진주를 선물한 순간에서 영감을 받았습니다.</p>
-            <button><a class="bk-button-kdh" href="#">구매하기</a></button>
+            <div class="bk-text-kdh">
+                <p>나이키 농구</p>
+                <h1>힘과 지혜를 담은 진주</h1>
+                <p>에이원 'OG 펄'. 에이자의 할머니가 손녀에게 강인함을 상징하는 진주를 선물한 순간에서 영감을 받았습니다.</p>
+                <a class="bk-button-kdh" href="#">구매하기</a>
+            </div>
         </div>
 
 
-        <!--        main 축구 -->
         <div class="sc-box-kdh">
 
             <div class="sc-img-box-kdh">
                 <img class="sc-img-kdh" src="../img/main/soccer-img.avif" alt="축구">
             </div>
 
-            <p>나이키 머큐리얼 슈퍼플라이 10 엘리트</p>
-            <h2 >정밀한 터치와 압도적 스피드</h2>
+            <div class="sc-text-kdh">
+                <p>나이키 머큐리얼 슈퍼플라이 10 엘리트</p>
+                <h2>정밀한 터치와 압도적 스피드</h2>
                 <p>가장 뛰어난 반응성으로 최상의 퍼포먼스를 이어나가보세요.
-                    <br>발에 꼭 맞게 밀착되는 그립니트 소재와 초경량 아톰니트 갑피의 조합이 완벽한 핏과 민첩한 움직임을 선사합니다.</p>
-                <button><a class="sc-button-kdh" href="#">구매하기</a></button>
-
+                    <br>발에 꼭 맞게 밀착되는 그립니트 소재와 초경량 아톰니트 갑피의 조합이 완벽한 핏과 민첩한 움직임을 선사합니다.
+                </p>
+                <a class="sc-button-kdh" href="#">구매하기</a>
+            </div>
         </div>
 
         <!-- main Trending Now -->
 
+        <div class="tn-top-box-kdh">
+            <h3>Trending Now</h3>
+
+        </div>
+
         <div class="tn-box-kdh">
 
-            <div class="tn-top-box-kdh">
-                <h3>Trending Now</h3>
-                <p><</p>
-                <p>></p>
+            <div class="tn-img-kdh">
+                <div class="tn-img-box-1-kdh">
+                    <img src="../img/main/Treding-now-1.avif" alt="러닝1">
+                    <div class="tn-overlay-1">
+                        <p>빠른 페이스를 위한 발걸음</p>
+                        <a href="#">구매하기</a>
+                    </div>
+                </div>
+
+                <div class="tn-img-box-2-kdh">
+                    <img src="../img/main/Treding-now-2.avif" alt="러닝2">
+                    <div class="tn-overlay-2">
+                        <p>스트라이드 컬렉션</p>
+                        <a href="#">구매하기</a>
+                    </div>
+                </div>
+
+                <div class="tn-img-box-3-kdh">
+                    <img src="../img/main/Treding-now-3.avif" alt="농구">
+                    <div class="tn-overlay-3">
+                        <p>나이키 농구 의류</p>
+                        <a href="#">구매하기</a>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="tn-img-box-1-kdh">
-                <img src="../img/main/Treding-now-1.avif" alt="러닝1">
-                <p>빠른 페이스를 위한 발걸음</p>
-                <button><a href="#">구매하기</a></button>
-            </div>
-
-            <div class="tn-img-box-2-kdh">
-                <img src="../img/main/Treding-now-2.avif" alt="러닝2">
-                <p>스트라이드 컬렉션</p>
-                <button><a href="#">구매하기</a></button>
-            </div>
-
-            <div class="tn-img-box-3-kdh">
-                <img src="../img/main/Treding-now-3.avif" alt="농구">
-                <p>나이키 농구 의류</p>
-                <button><a href="#">구매하기</a></button>
-            </div>
 
         </div>
 
@@ -88,109 +149,256 @@
 
         </div>
 
+        <!-- 메트콘 9 AMP -->
+
+        <div class="mecton-box-kdh">
+
+            <div class="mecton-img-box-1-kdh">
+                <img src="../img/main/metcon9-AMP.avif" alt="메트콘">
+            </div>
+
+            <div class="mecton-text">
+                <h6>나이키 메트콘 9 AMP</h6>
+                <P>거친 움직임을 위한 나이키 메트콘 9 AMP.<br>
+                    하이퍼 리프트 플레이트와 고무 랩 디테일이 하체 운동의 안정감을 더하고, 크로스 트레이닝에 최적화된 설계로 어떤 동작도 흔들림 없이 지지해 줍니다.
+                </P>
+                <a href="#">구매하기</a>
+            </div>
+
+        </div>
+
 
         <!-- 나이키 페가수스 트레일 5 gtx -->
 
         <div class="tr-box-kdh">
 
             <div class="tr-img-box-kdh">
-                <img class="tr-img-kdh"  src="../img/main/pegasus-trail-5.avif" alt="트레일">
+                <img class="tr-img-kdh" src="../img/main/pegasus-trail-5.avif" alt="트레일">
             </div>
 
-            <h5>나이키 페가수스 트레일 5 GTX</h5>
-            <p>고어텍스 갑피와 견고한 트레일 ATC 밑창, 반응성 높은 리액트X 폼. <br>
-                페가수스 트레일 5 GTX는 악천후 속에서도 흔들림 없는 러닝을 완성합니다.</p>
-            <button><a class="tr-button-kdh" href="#">구매하기</a></button>
+
+            <div class="tr-text-kdh">
+                <h5>나이키 페가수스 트레일 5 GTX</h5>
+                <p>고어텍스 갑피와 견고한 트레일 ATC 밑창, 반응성 높은 리액트X 폼. <br>
+                    페가수스 트레일 5 GTX는 악천후 속에서도 흔들림 없는 러닝을 완성합니다.
+                </p>
+                <a class="tr-button-kdh" href="#">구매하기</a>
+            </div>
+
         </div>
 
 
         <!-- New & Featured -->
 
-        <div>
+        <div class="nf-top-box-kdh">
             <h6>New & Featured</h6>
+        </div>
 
-            <ul class="nf-box-kdh">
+        <div class=" nf-box-kdh">
+
+            <ul class="nf-img-box-kdh">
+
                 <li class="nf-img-box-1-kdh">
                     <img src="../img/main/New-Featured-dn8-m.avif" alt="dn8 남자">
-                    <p>다이내믹 에어</p>
-                    <p>에어맥스 Dn8</p>
-                    <button><a href="#">남성 제품</a></button>
+
+                    <div class="nf-overlay-kdh">
+                        <p>다이내믹 에어</p>
+                        <p class="dn-kdh">에어맥스 Dn8</p>
+                        <a href="#">남성 제품</a>
+                    </div>
                 </li>
 
                 <li class="nf-img-box-2-kdh">
                     <img src="../img/main/New-Featured-dn8-w.avif" alt="dn8 여자">
-                    <p>다이내믹 에어</p>
-                    <p>에어맥스 Dn8</p>
-                    <button><a href="#">여성 제품</a></button>
+
+                    <div class="nf-overlay-kdh">
+                        <p>다이내믹 에어</p>
+                        <p class="dn-kdh">에어맥스 Dn8</p>
+                        <a href="#">여성 제품</a>
+                    </div>
+
                 </li>
 
                 <li class="nf-img-box-3-kdh">
                     <img src="../img/main/New-Featured-vomero18.avif" alt="보메로 18">
-                    <p>보메로 18</p>
-                    <button><a href="#">구매하기</a></button>
+
+                    <div class="nf-overlay-kdh">
+                        <p>보메로 18</p>
+                        <a href="#">구매하기</a>
+                    </div>
+
                 </li>
 
                 <li class="nf-img-box-4-kdh">
                     <img src="../img/main/New-Featured-running.avif" alt="나이키 러닝화 추천 테스트">
-                    <p>나이키 러닝화 추천 테스트</p>
-                    <button><a href="#">시작하기</a></button>
+
+                    <div class="nf-overlay-kdh">
+                        <p>나이키 러닝화 추천 테스트</p>
+                        <a href="#">시작하기</a>
+                    </div>
+
                 </li>
             </ul>
 
         </div>
 
-            <!-- 메트콘 9 AMP -->
+        <!-- nike membership -->
 
-            <div class="mecton-box-kdh">
-                <div class="mecton-img-box-1-kdh">
-                    <img src="../img/main/metcon9-AMP.avif" alt="메트콘">
-                </div>
 
-                <h6>나이키 페가수스 트레일 5 GTX</h6>
+        <div class="ms-top-box-kdh">
+            <div>나이키 멤버십</div>
 
-                <P>고어텍스 갑피와 견고한 트레일 ATC 밑창, 반응성 높은 리액트X 폼.<br>
-                    페가수스 트레일 5 GTX는 악천후 속에서도 흔들림 없는 러닝을 완성합니다.
-                </P>
-                <button><a href="#">구매하기</a></button>
+        </div>
+
+        <div class="ms-box-kdh">
+
+
+            <div class="ms-img-box-1-kdh ms-img-box-kdh">
+                <img src="../img/main/membership-1.avif" alt="멤버 리워드">
+
+
+            <div class="ms-text-kdh">
+                <p>멤버 리워드</p>
+                <p>운동과 쇼핑을 위한 특별한 혜택</p>
+                <a href="#">자세히 보기</a>
+            </div>
 
             </div>
 
 
-            <!-- nike membership -->
+            <div class="ms-img-box-2-kdh ms-img-box-kdh">
+                <img src="../img/main/membership-2.avif" alt="스포츠">
 
-            <div class="ms-box-kdh">
-
-                <div class="ms-top-box-kdh">
-                    <p>나이키 멤버십</p>
-                        <p><</p>
-                        <p>></p>
-                </div>
-
-                <div>
-                    <div class="ms-img-box-1-kdh">
-                        <img src="../img/main/membership-1.avif" alt="멤버 리워드">
-                        <p>멤버 리워드</p>
-                        <p>운동과 쇼핑을 위한 특별한 혜택</p>
-                        <button><a href="#">자세히 보기</a></button>
-                    </div>
-
-                    <div class="ms-img-box-2-kdh">
-                        <img src="../img/main/membership-2.avif" alt="스포츠">
-                        <p>스포츠 & 웰니스 앱</p>
-                        <p>언제 어디서든 운동하기</p>
-                        <button><a href="#">함께 운동하기</a></button>
-                    </div>
-
-                    <div class="ms-img-box-3-kdh">
-                        <img src="../img/main/membership-3.avif" alt="SNKRS">
-                        <p>SNKRS</p>
-                        <p>최고의 스니커즈 커뮤니티</p>
-                        <button><a href="#">자세히 보기</a></button>
-                    </div>
-
+                <div class="ms-text-kdh">
+                <p>스포츠 & 웰니스 앱</p>
+                <p>언제 어디서든 운동하기</p>
+                <a href="#">함께 운동하기</a>
                 </div>
 
             </div>
+
+            <div class="ms-img-box-3-kdh ms-img-box-kdh">
+                <img src="../img/main/membership-3.avif" alt="SNKRS">
+
+                <div class="ms-text-kdh">
+                <p>SNKRS</p>
+                <p>최고의 스니커즈 커뮤니티</p>
+                <a href="#">자세히 보기</a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        </div>
+        <!--        하단 메뉴 목록-->
+        <div class="bottom-menu">
+
+            <ul>Featured
+                <a href="#">에어 포스 1</a>
+                <a href="#">코르테즈</a>
+                <a href="#">나이키 C1TY</a>
+                <a href="#">필드 제네럴</a>
+            </ul>
+
+            <ul>신발
+                <a href="#">전체 보기</a>
+                <a href="#">러닝</a>
+                <a href="#">농구</a>
+                <a href="#">라이프스타일</a>
+            </ul>
+
+            <ul>의류
+                <a href="#">전체 보기</a>
+                <a href="#">재킷 & 베스트</a>
+                <a href="#">후디 & 크루</a>
+                <a href="#">조거 & 스웻팬츠</a>
+            </ul>
+
+            <ul>Kids
+                <a href="#">베이비 신발</a>
+                <a href="#">키즈 신발</a>
+                <a href="#">키즈 러닝 신발</a>
+                <a href="#">키즈 농구 신발</a>
+            </ul>
+
+        </div>
+
+        <body>
+            <footer class="footer">
+                <nav class="nav">
+                    <ul>
+                        <li class="title">안내</li>
+                        <li><a href="#">멤버가입</a></li>
+                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="#">제품 가이드</a></li>
+                        <li><a href="#">러닝화 가이드</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title">맴버 혜택</li>
+                        <li><a href="#">웰컴 쿠폰</a></li>
+                        <li><a href="#">생일 쿠폰</a></li>
+                        <li><a href="#">학생 할인 쿠폰</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title">고객센터</li>
+                        <li><a href="#">주문배송조회</a></li>
+                        <li><a href="#">반품 정책</a></li>
+                        <li><a href="#">결제 방법</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title">회사소개</li>
+                        <li><a href="#">About Nike</a></li>
+                        <li><a href="#">소식</a></li>
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">투자자</a></li>
+                        <li><a href="#">지속가능성</a></li>
+                        <li><a href="#">신고하기</a></li>
+                    </ul>
+                    <a href="#" class="link link-global">대한민국</a>
+                </nav>
+                <ul class="menu">
+                    <li>&copy; 2025 Nike, Inc. All Rights Reserved</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#">위치정보이용약관</a></li>
+                    <li><a href="#">영상정보처리기기 운영 방침</a></li>
+                </ul>
+                <div class="txt">
+                    <div>
+                        <p>
+                            <span>유)나이키코리아 대표 Kimberlee Lynn Chang Mendes, 킴벌리 린 창 멘데스</span>
+                            <span>서울 강남구 테헤란로 152 강남파이낸스센터 30층</span>
+                            <span>통신판매업신고번호 2011-서울강남-03461</span>
+                            <span>
+                        등록번호 220-88-09068
+                        <a href="#">사업자 정보 확인</a>
+                    </span>
+                        </p>
+                        <p>
+                    <span>
+                        고객센터 전화 문의
+                        <a href="tel:#">080-022-0182</a>
+                        FAX 02-6744-5880
+                    </span>
+                            <span>
+                        이메일
+                        <a href="mailto:#">service@nike.co.kr</a>
+                    </span>
+                            <span>호스팅서비스사업자 (유)나이키코리아</span>
+                        </p>
+                    </div>
+                    <p>
+                        현금 등으로 결제 시 안전 거래를 위해 나이키 쇼핑몰에서 가입하신 한국결제네트웍스 유한회사의 구매안전 서비스(결제대금예치)를 이용하실 수 있습니다.
+                        콘텐츠산업진흥법에 의한 콘텐츠 보호 안내
+                        <a href="#">자세히 보기</a>
+                    </p>
+                </div>
+            </footer>
 
 
     </main>
