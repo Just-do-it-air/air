@@ -579,5 +579,25 @@
         </div>
     </footer>
     <!-- //footer -->
+
+    <script>
+        const listTop = document.querySelector('.list-top');
+        const sideBar = document.querySelector('.filter');
+
+
+        //스크롤 이벤트
+        window.addEventListener('scroll', () => {
+            const threshold = 156;
+
+            if (window.scrollY > threshold) {
+                listTop.classList.add('scrolled');
+                sideBar.style.cssText="top: 60px";
+            } else {
+                listTop.classList.remove('scrolled');
+            }
+        });
+
+    </script>
+
 </body>
 </html>
